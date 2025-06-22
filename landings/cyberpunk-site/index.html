@@ -51,16 +51,16 @@
                             </a>
                         </li>
                         <li><a href="" target="_blank" rel="noopener noreferrer">
-                            <picture>
-                                <img src="images/twitch-logo-mobile.svg" alt="Twitch Logo">
-                            </picture>
-                        </a>
-                    </li>
+                                <picture>
+                                    <img src="images/twitch-logo-mobile.svg" alt="Twitch Logo">
+                                </picture>
+                            </a>
+                        </li>
                         <li>
                             <a href="" target="_blank" rel="noopener noreferrer">
-                            <img src="images/instagram-logo-mobile.svg" alt="Instagram Logo">
-                        </a>
-                    </li>
+                                <img src="images/instagram-logo-mobile.svg" alt="Instagram Logo">
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -81,7 +81,11 @@
         <div class="wrapper">
             <h1>Найт-Сити изменит тебя навсегда!</h1>
             <p>
-                <span>Cyberpunk 2077</span> — приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя окружает.
+                <span>Cyberpunk 2077</span> — приключенческая ролевая игра, действие которой происходит в мегаполисе
+                Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в
+                поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль
+                игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя
+                окружает.
             </p>
         </div>
 
@@ -105,9 +109,46 @@
             </picture>
         </div>
     </section>
+    <div class="transition-noise"></div>
+    <section class="play">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="dots-gradient-desk-tablet.png">
+            <source media="(min-width: 1024px)" srcset="dots-gradient-desk-tablet.png">
+            <img src="images/sale.png" alt="Иконка скидки">
+        </picture>
 
-    <section>
-        
+        <picture>
+            <img src="images/consoles.png" alt="Консоли">
+        </picture>
+        <h2>Играй и выигрывай!</h2>
+        <p>
+            Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span>Xbox Series X</span> или
+            <span>Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут
+            подведены 1 февраля. Удачи! ;)
+        </p>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label>
+                <input type="text" name="fullname" placeholder="Как тебя зовут?">
+            </label>
+
+            <label>
+                <input type="email" name="user-email" placeholder="Твой е-mail">
+            </label>
+
+            <label for="user-file" class="file-label">Прикрепите скриншот</label>
+            <input type="file" name="user-file" id="user-file" class="file-input">
+
+            <button type="submit">Отправить</button>
+            <label class="checkbox-custom">
+                <input type="checkbox" name="personal-data">
+                <span class="checkmark"></span>
+                Согласен на обработку персональных данных
+            </label>
+
+        </form>
+
+
     </section>
 </body>
 
