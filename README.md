@@ -40,4 +40,4 @@
 
 1. **Клонируйте репозиторий:**
    ```bash
-   git clone https://github.com/ваш-username/frontend-practice.git
+   git clone https://github.com/ваш-username/frontend.git
