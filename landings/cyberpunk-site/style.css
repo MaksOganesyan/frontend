@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+  font-size: 62.5%;
+  --main-font: "Archangelsk";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 4px solid red !important; */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+picture {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 320px;
+  padding: 0;
+  margin: 0 auto; 
+}
+
+@font-face {
+  font-family: 'Archangelsk';
+  src: url('fonts/Archangelsk.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+}
+
+
+/* * Header */
+
+header {
+  height: 8rem;
+}
+
+.nav-menu  ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+/* ! Hero section */
+.common-background {
+  background: url('images/hero-sec-mobile-bg.png') no-repeat center top;
+  background-size: contain;
+  
+}
+.hero {
+  min-height:80dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end ;
+}
+
+
+/* ? Description Section */
+
+.description h1 {
+  font-family:  var(--main-font), sans-serif;
+  font-weight: normal;
+  text-align: left;
+  font-size: 3rem;
+  margin: 7rem 1.2rem 2.5rem 1.2rem;
+  
+}
+
+.description p {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: 2.5rem 1.2rem 7rem 1.2rem;
+  opacity: 90%;
+}
+
+.description span {
+  color: #69C3E3;
+}
+
+
+.picture-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+
