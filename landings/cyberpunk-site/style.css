@@ -255,3 +255,95 @@ header {
   border-width: 0 0.3rem 0.3rem 0;
   transform: rotate(45deg);
 }
+
+
+/*  * Deep dive section */
+.deep-dive {
+  position: relative;
+  overflow: hidden;
+  padding-top: 8rem ;
+  padding-bottom: 7rem;
+  background: #F8F200;
+  
+}
+
+.deep-dive::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 7rem;
+  background: url("images/dots-gradient-2.png") repeat-x top;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.deep-dive picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7.5rem;
+}
+
+.deep-dive h3 {
+  margin: 4rem 1.2rem 2.5rem 1.2rem;
+  font-family: var(--main-font), sans-serif;
+  font-size: 3rem;
+}
+
+.deep-dive p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  margin: 0rem 1.2rem 2.5rem 1.2rem;
+  line-height: 3.2rem;
+}
+
+.parametrs p {
+  display: flex;
+  align-items: center;
+  line-height: 100%;
+}
+
+.parametrs p img {
+  margin-right: 1.8rem;
+}
+
+.deep-dive button {
+  color: #F8F200;
+  width: 18.2rem;
+  height: 6rem;
+  background-color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-left: 1.2rem;
+}
+
+/* ! Buy game section */
+
+.buy-game {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.buy-game h4 {
+  padding: 4rem 1.2rem 2.5rem 1.2rem;
+  font-size: 3rem;
+  font-family: var(--main-font),sans-serif;
+
+}
+
+.buy-game span {
+  display: block;
+  margin-bottom: 2rem
+}
+
+.bonuses {
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
