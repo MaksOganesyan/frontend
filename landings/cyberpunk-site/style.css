@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
   font-size: 62.5%;
   --main-font: "Archangelsk";
@@ -11,13 +12,15 @@
   /* outline: 4px solid red !important; */
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
   text-decoration: none;
 }
@@ -39,7 +42,7 @@ picture {
 .wrapper {
   max-width: 320px;
   padding: 0;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 @font-face {
@@ -49,6 +52,13 @@ picture {
   font-weight: normal;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
 
 /* * Header */
 
@@ -56,7 +66,7 @@ header {
   height: 8rem;
 }
 
-.nav-menu  ul {
+.nav-menu ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -73,25 +83,26 @@ header {
 .common-background {
   background: url('images/hero-sec-mobile-bg.png') no-repeat center top;
   background-size: contain;
-  
+
 }
+
 .hero {
-  min-height:80dvh;
+  min-height: 80dvh;
   display: flex;
   flex-direction: column;
-  justify-content:flex-end ;
+  justify-content: flex-end;
 }
 
 
 /* ? Description Section */
 
 .description h1 {
-  font-family:  var(--main-font), sans-serif;
+  font-family: var(--main-font), sans-serif;
   font-weight: normal;
   text-align: left;
   font-size: 3rem;
   margin: 7rem 1.2rem 2.5rem 1.2rem;
-  
+
 }
 
 .description p {
@@ -116,6 +127,7 @@ header {
 }
 
 
+/* ! Play section */
 .play {
   margin-top: 7rem;
   position: relative;
@@ -129,8 +141,10 @@ header {
 .play::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 7rem; 
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7rem;
   background: url("images/dots-gradient.png") repeat-x top;
   background-size: contain;
   pointer-events: none;
@@ -180,7 +194,7 @@ header {
 }
 
 .file-input {
-  display: none; 
+  display: none;
 }
 
 .file-label {
@@ -225,15 +239,15 @@ header {
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   user-select: none;
-  
+
 }
 
 .checkbox-custom input {
-  display: none; 
+  display: none;
 }
 
 .checkmark {
-  width: 2.8rem;          
+  width: 2.8rem;
   height: 2.8rem;
   border: 0.2rem solid #ccc;
   background-color: transparent;
@@ -241,10 +255,10 @@ header {
   margin-right: 1rem;
   position: relative;
   box-sizing: border-box;
-  flex-shrink: 0;     
+  flex-shrink: 0;
 }
 
-.checkbox-custom input:checked + .checkmark::after {
+.checkbox-custom input:checked+.checkmark::after {
   content: "";
   position: absolute;
   left: 0.8rem;
@@ -257,20 +271,22 @@ header {
 }
 
 
-/*  * Deep dive section */
+/* * Deep dive section */
 .deep-dive {
   position: relative;
   overflow: hidden;
-  padding-top: 8rem ;
+  padding-top: 8rem;
   padding-bottom: 7rem;
   background: #F8F200;
-  
+
 }
 
 .deep-dive::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 7rem;
   background: url("images/dots-gradient-2.png") repeat-x top;
   background-size: contain;
@@ -285,7 +301,7 @@ header {
   margin-top: 7.5rem;
 }
 
-.deep-dive h3 {
+.deep-dive h2 {
   margin: 4rem 1.2rem 2.5rem 1.2rem;
   font-family: var(--main-font), sans-serif;
   font-size: 3rem;
@@ -319,32 +335,28 @@ header {
   margin-left: 1.2rem;
 }
 
-/* ! Buy game section */
 
+/* ! Buy game section */
 .buy-game {
   background-color: #000000;
   color: #FFFFFF;
 }
 
-.buy-game h4 {
+.buy-game h2 {
   padding: 4rem 1.2rem 2.5rem 1.2rem;
   font-size: 3rem;
-  font-family: var(--main-font),sans-serif;
+  font-family: var(--main-font), sans-serif;
 
 }
 
 .include-complect {
-  margin-left: 1.2rem;
-}
-.buy-game span {
-  display: block;
-  margin-bottom: 2rem;
-  font-family: "Roboto", sans-serif;
   font-size: 2rem;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
   color: #52BEDC;
-}
+  margin-left: 1.2rem;
+  margin-bottom: 2rem;
 
+}
 
 .bonuses {
   margin-left: 1.2rem;
@@ -356,9 +368,12 @@ header {
   font-family: "Roboto", sans-serif;
 }
 
+.choose-platform {
+  margin-top: 4rem;
+}
+
+
 /* ? Footer */
-
-
 footer .logo {
   padding: 0;
   margin-top: 4rem;
@@ -388,3 +403,4 @@ footer .cd-red-logo {
   height: 4rem;
   font-size: 1.2rem;
 }
+

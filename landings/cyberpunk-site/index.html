@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -20,44 +21,45 @@
                         <img src="images/logo-mobile.svg" alt="Логотип">
                     </picture>
                 </a>
-                <nav class="nav-menu">
+                <nav class="nav-menu" aria-label="Социальные сети">
                     <ul>
                         <li>
-                            <a href="" target="_blank" rel="noopener noreferrer">
+                            <a href="" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                                 <picture>
-                                    <img src="images/youtube-logo-mobile.svg" alt="Youtube Logo">
+                                    <img src="images/youtube-logo-mobile.svg" alt="YouTube Logo">
                                 </picture>
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank" rel="noopener noreferrer">
+                            <a href="" target="_blank" rel="noopener noreferrer" aria-label="VK">
                                 <picture>
                                     <img src="images/vk-logo-mobile.svg" alt="VK Logo">
                                 </picture>
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank" rel="noopener noreferrer">
+                            <a href="" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                 <picture>
-                                    <img src="images/facebook-logo-mobile.svg" alt="Facebool Logo">
+                                    <img src="images/facebook-logo-mobile.svg" alt="Facebook Logo">
                                 </picture>
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank" rel="noopener noreferrer">
+                            <a href="" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                 <picture>
                                     <img src="images/twitter-logo-mobile.svg" alt="Twitter Logo">
                                 </picture>
                             </a>
                         </li>
-                        <li><a href="" target="_blank" rel="noopener noreferrer">
+                        <li>
+                            <a href="" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
                                 <picture>
                                     <img src="images/twitch-logo-mobile.svg" alt="Twitch Logo">
                                 </picture>
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank" rel="noopener noreferrer">
+                            <a href="" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                 <img src="images/instagram-logo-mobile.svg" alt="Instagram Logo">
                             </a>
                         </li>
@@ -68,144 +70,137 @@
 
         <main>
             <section class="hero">
-            <div class="wrapper">
-                <picture class="main-hero-banner">
-                    <source media="(min-width: 1200px)" srcset="images/hero-banner-tablet-desktop.png">
-                    <source media="(min-width: 1024px)" srcset="images/hero-banner-tablet-desktop.png">
-                    <img src="images/hero-banner-mobile.png" alt="Доступно на всех платформах">
+                <div class="wrapper">
+                    <h2 class="visually-hidden">Главный баннер</h2>
+                    <picture class="main-hero-banner">
+                        <source media="(min-width: 1200px)" srcset="images/hero-banner-tablet-desktop.png">
+                        <source media="(min-width: 1024px)" srcset="images/hero-banner-tablet-desktop.png">
+                        <img src="images/hero-banner-mobile.png" alt="Доступно на всех платформах">
+                    </picture>
+                </div>
+            </section>
+
+            <section class="description">
+                <div class="wrapper">
+                    <h1>Найт-Сити изменит тебя навсегда!</h1>
+                    <p>
+                        <span>Cyberpunk 2077</span> — приключенческая ролевая игра, действие которой происходит в мегаполисе
+                        Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в
+                        поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль
+                        игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя
+                        окружает.
+                    </p>
+                </div>
+
+                <div class="picture-container">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="images/street-desk-tablet.png">
+                        <source media="(min-width: 1024px)" srcset="images/street-desk-tablet.png">
+                        <img src="images/street.png" alt="Картинка улицы">
+                    </picture>
+
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="images/bike-desk-tablet.png">
+                        <source media="(min-width: 1024px)" srcset="images/bike-desk-tablet.png">
+                        <img src="images/bike.png" alt="Картинка женщины на мотоцикле">
+                    </picture>
+
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="images/city-panorama-desk-tablet.png">
+                        <source media="(min-width: 1024px)" srcset="images/city-panorama-desk-tablet.png">
+                        <img src="images/city-panorama.png" alt="Панорама города">
+                    </picture>
+                </div>
+            </section>
+
+            <section class="play">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="images/dots-gradient-desk-tablet.png">
+                    <source media="(min-width: 1024px)" srcset="images/dots-gradient-desk-tablet.png">
+                    <img src="images/sale.png" alt="Иконка скидки">
                 </picture>
-            </div>
-    </div>
-        </section>
-    
 
-    <section class="description">
-        <div class="wrapper">
-            <h1>Найт-Сити изменит тебя навсегда!</h1>
-            <p>
-                <span>Cyberpunk 2077</span> — приключенческая ролевая игра, действие которой происходит в мегаполисе
-                Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в
-                поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль
-                игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя
-                окружает.
-            </p>
-        </div>
+                <picture>
+                    <img src="images/consoles.png" alt="Консоли">
+                </picture>
+                <h2>Играй и выигрывай!</h2>
+                <p>
+                    Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span>Xbox Series X</span> или
+                    <span>Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут
+                    подведены 1 февраля. Удачи! ;)
+                </p>
 
-        <div class="picture-container">
-            <picture>
-                <source media="(min-width: 1200px)" srcset="images/street-desk-tablet.png">
-                <source media="(min-width: 1024px)" srcset="images/street-desk-tablet.png">
-                <img src="images/street.png" alt="Картинка улицы ">
-            </picture>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <label>
+                        <input type="text" name="fullname" placeholder="Как тебя зовут?">
+                    </label>
 
-            <picture>
-                <source media="(min-width: 1200px)" srcset="images/bike-desk-tablet.png">
-                <source media="(min-width: 1024px)" srcset="images/bike-desk-tablet.png">
-                <img src="images/bike.png" alt="Картинка женщины на мотоцикле">
-            </picture>
+                    <label>
+                        <input type="email" name="user-email" placeholder="Твой е-mail">
+                    </label>
 
-            <picture>
-                <source media="(min-width: 1200px)" srcset="images/city-panorama-desk-tablet.png">
-                <source media="(min-width: 1024px)" srcset="images/city-panorama-desk-tablet.png">
-                <img src="images/city-panorama.png" alt="Панорама города">
-            </picture>
-        </div>
-    </section>
-    <section class="play">
-        <picture>
-            <source media="(min-width: 1200px)" srcset="dots-gradient-desk-tablet.png">
-            <source media="(min-width: 1024px)" srcset="dots-gradient-desk-tablet.png">
-            <img src="images/sale.png" alt="Иконка скидки">
-        </picture>
+                    <label for="user-file" class="file-label">Прикрепите скриншот</label>
+                    <input type="file" name="user-file" id="user-file" class="file-input">
 
-        <picture>
-            <img src="images/consoles.png" alt="Консоли">
-        </picture>
-        <h2>Играй и выигрывай!</h2>
-        <p>
-            Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span>Xbox Series X</span> или
-            <span>Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут
-            подведены 1 февраля. Удачи! ;)
-        </p>
+                    <button type="submit">Отправить</button>
+                    <label class="checkbox-custom">
+                        <input type="checkbox" name="personal-data" aria-label="Согласие на обработку персональных данных">
+                        <span class="checkmark"></span>
+                        Согласен на обработку персональных данных
+                    </label>
+                </form>
+            </section>
 
-        <form action="#" method="post" enctype="multipart/form-data">
-            <label>
-                <input type="text" name="fullname" placeholder="Как тебя зовут?">
-            </label>
+            <section class="deep-dive">
+                <div class="wrapper">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="images/monitor-desk.png">
+                        <source media="(min-width: 1024px)" srcset="images/monitor-tablet.png">
+                        <img src="images/monitor-mobile.png" alt="Изображение монитора">
+                    </picture>
+                    <h2>Полное погружение вместе с HP</h2>
+                    <p>Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с диагональю 23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на любые события с временем отклика 1 мс и частотой в 144 Гц!</p>
+                    <ul class="parametrs">
+                        <li>
+                            <p><img src="images/color_lens.svg" alt="">Яркие насыщенные цвета</p>
+                        </li>
+                        <li>
+                            <p><img src="images/stars.svg" alt="">Кристальная четкость изображения</p>
+                        </li>
+                        <li>
+                            <p><img src="images/square.svg" alt="">Быстрые движения и плавный геймплей</p>
+                        </li>
+                    </ul>
+                    <button type="button">Подробнее</button>
+                </div>
+            </section>
 
-            <label>
-                <input type="email" name="user-email" placeholder="Твой е-mail">
-            </label>
+            <section class="buy-game">
+                <div class="wrapper">
+                    <img src="images/disk-image.jpg" alt="">
+                    <h2>Купить игру Cyberpunk 2077</h2>
+                    <p class="include-complect">В комплект входит:</p>
 
-            <label for="user-file" class="file-label">Прикрепите скриншот</label>
-            <input type="file" name="user-file" id="user-file" class="file-input">
+                    <ul class="parametrs bonuses">
+                        <li>
+                            <p><img src="images/disk.svg" alt="">Футляр с игровыми дисками</p>
+                        </li>
+                        <li>
+                            <p><img src="images/doska.svg" alt="">Футляр с кодом для загрузки игры и дисками (pc)</p>
+                        </li>
+                        <li>
+                            <p><img src="images/kartinka.svg" alt="">Справочник с информацией об игровом мире</p>
+                        </li>
+                    </ul>
 
-            <button type="submit">Отправить</button>
-            <label class="checkbox-custom">
-                <input type="checkbox" name="personal-data">
-                <span class="checkmark"></span>
-                Согласен на обработку персональных данных
-            </label>
-
-        </form>
-    </section>
-
-    <section class="deep-dive">
-        <div class="wrapper">
-            <picture>
-                <source media="(min-width: 1200px)" srcset="images/monitor-desk.png">
-                <source media="(min-width: 1024px)" srcset="images/monitor-tablet.png">
-                <img src="images/monitor-mobile.png" alt="изображение монитора">
-            </picture>
-            <h3>Полное погружение вместе с HP</h3>
-            <p>Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с диагональю 23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на любые события с временем отклика 1 мс и частотой в 144 Гц!</p>
-            <ul class="parametrs">
-                <li>
-                    <p><img src="images/color_lens.svg" alt="">Яркие насыщенные цвета</p>
-                </li>
-
-                <li>
-                    <p><img src="images/stars.svg" alt="">Кристальная четкость изображения</p>
-                </li>
-
-                <li>
-                    <p><img src="images/square.svg" alt="">Быстрые движения и плавный геймплей</p>
-                </li>
-            </ul>
-            <button type="button">Подробнее</button>
-        </div>
-    </section>
-
-    <section class="buy-game">
-        <div class="wrapper">
-            <img src="images/disk-image.jpg" alt="">
-            <h4>Купить игру Cyberpunk 2077</h4>
-            <span class="include-complect">В комплект входит:</span>
-
-
-            <ul class="parametrs bonuses">
-                <li>
-                    <p><img src="images/disk.svg" alt="">Футляр с игровыми дисками</p>
-                </li>
-
-                <li>
-                    <p><img src="images/doska.svg" alt="">Футляр с кодом для загрузки игры и дисками (pc)</p>
-                </li>
-
-                <li>
-                    <p><img src="images/kartinka.svg" alt="">Справочник с информацией об игровом мире</p>
-                </li>
-            </ul>
-                
-            <span>Выберите платформу:</span>
-            <picture>
-                <source media="(min-width: 1200px)" srcset="images/platforms-tablet-desk.png">
-                <source media="(min-width: 1024px)" srcset="images/platforms-tablet-desk.png">
-                <img src="images/platforms.png" alt="доступные платформы изображение">
-            </picture>
-        </div>
-
-    </section>
+                    <p class="include-complect choose-platform">Выберите платформу:</p>
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="images/platforms-tablet-desk.png">
+                        <source media="(min-width: 1024px)" srcset="images/platforms-tablet-desk.png">
+                        <img src="images/platforms.png" alt="Доступные платформы">
+                    </picture>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
@@ -219,8 +214,8 @@
                 </a>
                 <picture class="logo cd-red-logo">
                     <source media="(min-width: 1200px)" srcset="images/CD-Projekt-logo-desk-tablet.svg">
-                    <source media="(min-width: 1024px)" srcset="CD-Projekt-logo-desk-tablet.svg">
-                    <img src="images/CD-Projekt-logo.svg" alt="Логотип разработчика" >
+                    <source media="(min-width: 1024px)" srcset="images/CD-Projekt-logo-desk-tablet.svg">
+                    <img src="images/CD-Projekt-logo.svg" alt="Логотип разработчика">
                 </picture>
 
                 <div class="licence">
@@ -232,6 +227,7 @@
                 </div>
             </div>
         </footer>
+    </div>
 </body>
 
 </html>
