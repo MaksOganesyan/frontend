@@ -17,7 +17,7 @@
                     <picture>
                         <source media="(min-width: 1920px)" srcset="images/logo-tablet-desktop.svg">
                         <source media="(min-width: 1024px)" srcset="images/logo-tablet-desktop.svg">
-                        <img src="images\logo-mobile.svg" alt="Логотип">
+                        <img src="images/logo-mobile.svg" alt="Логотип">
                     </picture>
                 </a>
                 <nav class="nav-menu">
@@ -66,7 +66,8 @@
             </div>
         </header>
 
-        <section class="hero">
+        <main>
+            <section class="hero">
             <div class="wrapper">
                 <picture class="main-hero-banner">
                     <source media="(min-width: 1200px)" srcset="images/hero-banner-tablet-desktop.png">
@@ -74,8 +75,9 @@
                     <img src="images/hero-banner-mobile.png" alt="Доступно на всех платформах">
                 </picture>
             </div>
-        </section>
     </div>
+        </section>
+    
 
     <section class="description">
         <div class="wrapper">
@@ -178,7 +180,7 @@
         <div class="wrapper">
             <img src="images/disk-image.jpg" alt="">
             <h4>Купить игру Cyberpunk 2077</h4>
-            <span>В комплект входит:</span>
+            <span class="include-complect">В комплект входит:</span>
 
 
             <ul class="parametrs bonuses">
@@ -193,10 +195,43 @@
                 <li>
                     <p><img src="images/kartinka.svg" alt="">Справочник с информацией об игровом мире</p>
                 </li>
-                <h4>ksks</h4>
+            </ul>
+                
+            <span>Выберите платформу:</span>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/platforms-tablet-desk.png">
+                <source media="(min-width: 1024px)" srcset="images/platforms-tablet-desk.png">
+                <img src="images/platforms.png" alt="доступные платформы изображение">
+            </picture>
         </div>
 
     </section>
+        </main>
+
+        <footer class="footer">
+            <div class="wrapper">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="logo">
+                    <picture>
+                        <source media="(min-width: 1920px)" srcset="images/logo-tablet-desktop.svg">
+                        <source media="(min-width: 1024px)" srcset="images/logo-tablet-desktop.svg">
+                        <img src="images/logo-mobile.svg" alt="Логотип">
+                    </picture>
+                </a>
+                <picture class="logo cd-red-logo">
+                    <source media="(min-width: 1200px)" srcset="images/CD-Projekt-logo-desk-tablet.svg">
+                    <source media="(min-width: 1024px)" srcset="CD-Projekt-logo-desk-tablet.svg">
+                    <img src="images/CD-Projekt-logo.svg" alt="Логотип разработчика" >
+                </picture>
+
+                <div class="licence">
+                    <p>Лицензия</p>
+                    <p>Политика конфиденциальности</p>
+                </div>
+                <div class="licence licence-2">
+                    <p>CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®</p>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>
