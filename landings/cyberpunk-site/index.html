@@ -82,27 +82,31 @@
             </div>
         </header>
 
-        <main>
-            <section class="hero">
-                <div class="wrapper">
-                    <h2 class="visually-hidden">Главный баннер</h2>
-                    <picture class="main-hero-banner">
-                        <source media="(min-width: 1200px)" srcset="images/hero-banner-tablet-desktop.png">
-                        <source media="(min-width: 1024px)" srcset="images/hero-banner-tablet-desktop.png">
-                        <img src="images/hero-banner-mobile.png" alt="Доступно на всех платформах">
-                    </picture>
-                </div>
-            </section>
 
+        <section class="hero">
+            <div class="wrapper">
+                <h2 class="visually-hidden">Главный баннер</h2>
+                <picture class="main-hero-banner">
+                    <source media="(min-width: 1200px)" srcset="images/hero-banner-tablet-desktop.png">
+                    <source media="(min-width: 1024px)" srcset="images/hero-banner-tablet-desktop.png">
+                    <img src="images/hero-banner-mobile.png" alt="Доступно на всех платформах">
+                </picture>
+            </div>
+        </section>
+        <main>
             <section class="description">
                 <div class="wrapper">
                     <h1>Найт-Сити изменит
                         тебя навсегда!</h1>
                     <p>
-                        <span>Cyberpunk 2077</span> — приключенческая ролевая игра, действие которой происходит в мегаполисе
-                        Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в
-                        поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль
-                        игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя
+                        <span>Cyberpunk 2077</span> — приключенческая ролевая игра, действие которой происходит в
+                        мегаполисе
+                        Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника
+                        в
+                        поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и
+                        стиль
+                        игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что
+                        тебя
                         окружает.
                     </p>
                 </div>
@@ -129,23 +133,28 @@
             </section>
 
             <section class="play">
-                <picture>
-                    <source media="(min-width: 1200px)" srcset="images/">
-                    <source media="(min-width: 1024px)" srcset="images/">
+                <div class="wrapper">
+                    <picture class="sale-img">
+                    <source media="(min-width: 1200px)" srcset="images/sale-tablet-desk.png">
+                    <source media="(min-width: 1024px)" srcset="images/sale-tablet-desk.png">
                     <img src="images/sale.png" alt="Иконка скидки">
                 </picture>
 
-                <picture>
+                <picture class="console-img">
+                    <source media="(min-width: 1200px)" srcset="images/consoles-tablet-desk.png">
+                    <source media="(min-width: 1024px)" srcset="images/consoles-tablet-desk.png">
                     <img src="images/consoles.png" alt="Консоли">
                 </picture>
-                <h2>Играй и выигрывай!</h2>
-                <p>
-                    Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span>Xbox Series X</span> или
-                    <span>Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут
-                    подведены 1 февраля. Удачи! ;)
+                <h2 class="play-win">Играй и выигрывай!</h2>
+                <p class="play-in">
+                    Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span>Xbox Series X</span>
+                    или
+                    <span>Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги
+                    розыгрыша будут
+                    подведены 1 февраля. Удачи! ;
                 </p>
 
-                <form action="#" method="post" enctype="multipart/form-data">
+                <form action="#" method="post" enctype="multipart/form-data" class="main-form">
                     <label>
                         <input type="text" name="fullname" placeholder="Как тебя зовут?">
                     </label>
@@ -159,65 +168,106 @@
 
                     <button type="submit">Отправить</button>
                     <label class="checkbox-custom">
-                        <input type="checkbox" name="personal-data" aria-label="Согласие на обработку персональных данных">
+                        <input type="checkbox" name="personal-data"
+                            aria-label="Согласие на обработку персональных данных">
                         <span class="checkmark"></span>
                         Согласен на обработку персональных данных
                     </label>
                 </form>
+                </div>
             </section>
 
             <section class="deep-dive">
                 <div class="wrapper">
-                    <picture>
+                    <picture class="monitor-img">
                         <source media="(min-width: 1200px)" srcset="images/monitor-desk.png">
                         <source media="(min-width: 1024px)" srcset="images/monitor-tablet.png">
                         <img src="images/monitor-mobile.png" alt="Изображение монитора">
                     </picture>
-                    <h2>Полное погружение вместе с HP</h2>
-                    <p>Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с диагональю 23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на любые события с временем отклика 1 мс и частотой в 144 Гц!</p>
+                    <h2 class="full-deep">Полное погружение вместе с HP</h2>
+                    <p class="full-deep-p">Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с диагональю
+                        23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на
+                        любые события с временем отклика 1 мс и частотой в 144 Гц!</p>
                     <ul class="parametrs">
                         <li>
-                            <p><img src="images/color_lens.svg" alt="">Яркие насыщенные цвета</p>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/color_lens-tablet-desk.svg">
+                                <source media="(min-width: 1024px)" srcset="images/color_lens-tablet-desk.svg">
+                                <img src="images/color_lens.svg" alt="иконка палитры">
+                                <p>Яркие насыщенные цвета</p>
+                            </picture>
                         </li>
                         <li>
-                            <p><img src="images/stars.svg" alt="">Кристальная четкость изображения</p>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/stars-tablet-desk.svg">
+                                <source media="(min-width: 1024px)" srcset="images/stars-tablet-desk.svg">
+                                <img src="images/stars.svg" alt="иконка звёзд">
+                                <p>Кристальная четкость изображения</p>
+                            </picture>
                         </li>
+
                         <li>
-                            <p><img src="images/square.svg" alt="">Быстрые движения и плавный геймплей</p>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/square-tablet-desk.svg">
+                                <source media="(min-width: 1024px)" srcset="images/square-tablet-desk.svg">
+                                <img src="images/square.svg" alt="иконка квадрата">
+                                <p>Быстрые движения и плавный геймплей</p>
+                            </picture>
                         </li>
                     </ul>
-                    <button type="button">Подробнее</button>
+                    <button type="button" class="more-btn">Подробнее</button>
                 </div>
             </section>
 
             <section class="buy-game">
                 <div class="wrapper">
-                    <img src="images/disk-image.jpg" alt="">
-                    <h2>Купить игру Cyberpunk 2077</h2>
+                    <picture class="disk-img">
+                        <source media="(min-width: 1024px)" srcset="images/disk-image-tablet.jpg">
+                        <img src="images/disk-image.jpg" alt="изображение с дисками">
+                    </picture>
+                    <h2 class="buy-cyber">Купить игру Cyberpunk 2077</h2>
                     <p class="include-complect">В комплект входит:</p>
 
                     <ul class="parametrs bonuses">
                         <li>
-                            <p><img src="images/disk.svg" alt="">Футляр с игровыми дисками</p>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/disk-tablet-desk-ico.svg">
+                                <source media="(min-width: 1024px)" srcset="images/disk-tablet-desk-ico.svg">
+                                <img src="images/disk.svg" alt="иконка диска">
+                                <p>Футляр с игровыми дисками</p>
+                            </picture>
                         </li>
+
                         <li>
-                            <p><img src="images/doska.svg" alt="">Футляр с кодом для загрузки игры и дисками (pc)</p>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/doska-tablet-desk-ico.svg">
+                                <source media="(min-width: 1024px)" srcset="images/doska-tablet-desk-ico.svg">
+                                <img src="images/doska.svg" alt="иконка доски">
+                                <p>Футляр с кодом для загрузки игры и дисками (pc)</p>
+                            </picture>
                         </li>
+
                         <li>
-                            <p><img src="images/kartinka.svg" alt="">Справочник с информацией об игровом мире</p>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/kartinka-tablet-desk-ico.svg">
+                                <source media="(min-width: 1024px)" srcset="images/kartinka-tablet-desk-ico.svg">
+                                <img src="images/kartinka.svg" alt="иконка картинки">
+                                <p>Справочник с информацией об игровом мире</p>
+                            </picture>
                         </li>
                     </ul>
 
                     <p class="include-complect choose-platform">Выберите платформу:</p>
-                    <picture>
+                    <picture class="platforms-img">
                         <source media="(min-width: 1200px)" srcset="images/platforms-tablet-desk.png">
                         <source media="(min-width: 1024px)" srcset="images/platforms-tablet-desk.png">
                         <img src="images/platforms.png" alt="Доступные платформы">
                     </picture>
                 </div>
             </section>
-        </main>
 
+
+        </main>
         <footer class="footer">
             <div class="wrapper">
                 <a href="#" target="_blank" rel="noopener noreferrer" class="logo">

@@ -280,6 +280,8 @@ header {
   padding-top: 8rem;
   padding-bottom: 7rem;
   background: #F8F200;
+  
+  
 
 }
 
@@ -294,13 +296,18 @@ header {
   background-size: contain;
   pointer-events: none;
   z-index: 10;
+  
 }
 
 .deep-dive picture {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-top: 7.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.monitor-img {
+  margin-left: 1rem;
 }
 
 .deep-dive h2 {
@@ -312,15 +319,20 @@ header {
 .deep-dive p {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
-  margin: 0rem 1.2rem 2.5rem 1.2rem;
+  margin-left: 1.2rem;
   line-height: 3.2rem;
 }
 
-.parametrs p {
+
+.parametrs picture {
+  margin-top: 0rem;
+  margin-left: 1.2rem;
   display: flex;
   align-items: center;
-  line-height: 100%;
+
+
 }
+
 
 .parametrs p img {
   margin-right: 1.8rem;
@@ -357,8 +369,9 @@ header {
   color: #52BEDC;
   margin-left: 1.2rem;
   margin-bottom: 2rem;
-
 }
+
+
 
 .bonuses {
   margin-left: 1.2rem;
@@ -369,7 +382,9 @@ header {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
 }
-
+.bonuses p {
+  margin-left: 2rem;
+}
 .choose-platform {
   margin-top: 4rem;
 }
@@ -428,12 +443,26 @@ footer .cd-red-logo {
 
 /* Hero section */
 .common-background {
-  background: url("images/hero-sec-tablet-bg.png") no-repeat center top;
+  background: url("images/hero-sec-tablet-bg.png") no-repeat ;
+  
 
 }
 .hero {
   min-height: 79.2dvh;
 }
+
+
+ .hero .wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .main-hero-banner {
+    position: relative;
+    left: 17rem;
+  }
+
+
 
 /* !Description section */
 .description h1 {
@@ -450,6 +479,186 @@ footer .cd-red-logo {
 .description .picture-container {
   display: grid;
   grid-template-columns: repeat(2,47.6rem);
+}
+
+
+/* * Play section */
+.play .wrapper {
+  display: grid;
+  grid-template-areas: 
+  "sale-img console-img"
+  "play-win console-img"
+  "play-in console-img"
+  "main-form console-img";
+  padding-left: 3.6rem;
+  padding-right: 3.6rem;
+ 
+  
+ 
   
 }
+
+.sale-img {
+  grid-area: sale-img;
+  margin-top: 2rem;
+}
+
+ .play .play-win {
+  grid-area: play-win;
+  font-size: 6.2rem;
+
+}
+
+ .play .play-in {
+  grid-area: play-in;
+  font-size: 1.8rem;
+  line-height: 3.4rem;
+}
+
+
+.console-img {
+  grid-area: console-img;
+  margin-top: 7.5rem;
+  
+}
+
+.main-form {
+  grid-area: main-form;
+}
+
+/* !Deep Dive section */
+
+
+
+.deep-dive {
+  position: relative;
+}
+
+.deep-dive::before {
+  display: block;
+  background: url("images/dots-gradient-2-desk-tablet.png");
+  background-color: none;
+
+}
+
+
+.deep-dive .wrapper{
+  display: grid;
+  grid-template-columns: 46rem 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: 
+    "monitor-img full-deep"
+    "monitor-img full-deep-p"
+    "monitor-img parameters"
+    "monitor-img more-btn";
+    
+  gap: 2rem; 
+}
+
+
+.monitor-img {
+  grid-area: monitor-img;
+}
+
+ .deep-dive .full-deep {
+  grid-area: full-deep;
+  font-size: 6.2rem;
+}
+
+ .deep-dive .full-deep-p {
+  grid-area: full-deep-p;
+  font-size: 1.8rem;
+  line-height: 3.4rem;
+}
+
+.deep-dive .parametrs {
+  grid-area: parameters;
+}
+
+.deep-dive .more-btn {
+  grid-area: more-btn;
+}
+
+.parametrs picture p {
+  margin: 0 0 0 1.4rem;
+  font-size: 1.8rem;
+}
+
+ .deep-dive .more-btn {
+  width: 19.4rem;
+}
+
+/* ! buy-game section  */
+
+.buy-game .wrapper {
+  display: grid;
+  grid-template-columns: 33.2rem 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: 
+  "disk-img buy-cyber"
+  "disk-img include-comlect"
+  "disk-img bonuses"
+  "disk-img choose-platform"
+  "disk-img platforms-img";
+  column-gap: 3rem;
+}
+
+.buy-game .disk-img {
+  grid-area: disk-img;
+  height: 71.7rem;
+}
+
+ .buy-game .buy-cyber {
+  grid-area: buy-cyber;
+  font-size: 6.2rem;
+}
+
+.buy-game .include-complect {
+  grid-area: include-comlect;
+  font-size: 2.4rem;
+}
+
+.buy-game .choose-platform {
+  grid-area: choose-platform ; 
+}
+
+.buy-game .platforms-img {
+  grid-area: platforms-img;
+  padding-bottom: 10rem;
+}
+
+
+/* Footer */
+
+.footer .wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+footer a.logo {
+  margin-top: 0;
+}
+
+footer picture {
+  margin: 0;
+}
+
+.licence {
+  background: none;
+  flex-direction: row;
+  gap: 1rem;
+  white-space: nowrap;
+  font-size: 1.8rem;
+}
+
+.licence-2 {
+  background-color: #000000;
+  width: 102.4rem;
+  
+}
+
+
 }
