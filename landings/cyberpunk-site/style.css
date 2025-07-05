@@ -84,7 +84,9 @@ header {
 /* ! Hero section */
 .common-background {
   background: url('images/hero-sec-mobile-bg.png') no-repeat center top;
-  background-size: contain;
+  background-size: cover;
+  /* width: 32rem;
+  height: 714px; */
 
 }
 
@@ -98,6 +100,11 @@ header {
 
 /* ? Description Section */
 
+
+.description {
+  position: relative;
+  
+}
 .description h1 {
   font-family: var(--main-font), sans-serif;
   font-weight: normal;
