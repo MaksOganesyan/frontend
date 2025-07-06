@@ -52,26 +52,14 @@ picture {
   font-weight: normal;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
 
-/* * Header */
-
-header {
-  height: 8rem;
-  
-}
-
-
+/*? Nav menu  */
 .nav-menu ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
+  gap: 2.8rem;
 }
 
 .logo {
@@ -82,29 +70,47 @@ header {
 }
 
 /* ! Hero section */
+
 .common-background {
-  background: url('images/hero-sec-mobile-bg.png') no-repeat center top;
+  position: relative;
+  min-height: 10dvh; 
+  background: url("images/hero-sec-mobile-bg.png") no-repeat center top;
   background-size: cover;
-  /* width: 32rem;
-  height: 714px; */
-
-}
-
-.hero {
-  min-height: 80dvh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 8rem; /* высота header */
+  min-height: calc(100dvh - 8rem);
+}
+
+ .hero .wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-container {
+  margin-top: auto; 
+  display: flex;
+  justify-content: center;
+  
+}
+
+.main-hero-banner img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 
 /* ? Description Section */
-
-
-.description {
-  position: relative;
-  
-}
 .description h1 {
   font-family: var(--main-font), sans-serif;
   font-weight: normal;
@@ -120,6 +126,7 @@ header {
   font-weight: 400;
   margin: 2.5rem 1.2rem 7rem 1.2rem;
   opacity: 90%;
+  line-height: 3.2rem;
 }
 
 .description span {
@@ -142,8 +149,9 @@ header {
   position: relative;
   overflow: hidden;
   background: #000000;
-  padding: 8rem 2rem 2rem 2rem;
+  padding: 8rem 2rem 7rem 2rem;
   color: white;
+  
 }
 
 
@@ -163,19 +171,21 @@ header {
 .play h2 {
   font-family: var(--main-font), sans-serif;
   font-size: 3rem;
+  margin-top: 2.5rem;
 
 }
 
 .play p {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
+  white-space: pre-line;
+  line-height: 3.2rem;
+
 }
 
 .play span {
   color: #69C3E3;
-
 }
-
 
 .play form {
   margin-top: 7rem;
@@ -214,7 +224,6 @@ header {
   border-style: dashed;
   border-width: 0.1rem;
   border-color: #777777;
-  /* background-color: #69C3E3; */
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
@@ -239,6 +248,7 @@ header {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
+  
 }
 
 .checkbox-custom {
@@ -330,14 +340,11 @@ header {
   line-height: 3.2rem;
 }
 
-
 .parametrs picture {
   margin-top: 0rem;
   margin-left: 1.2rem;
   display: flex;
   align-items: center;
-
-
 }
 
 
@@ -354,13 +361,14 @@ header {
   font-weight: 400;
   font-size: 1.6rem;
   margin-left: 1.2rem;
+  margin-top: 4rem;
 }
-
 
 /* ! Buy game section */
 .buy-game {
   background-color: #000000;
   color: #FFFFFF;
+  padding-bottom: 7.1rem;
 }
 
 .buy-game h2 {
@@ -396,6 +404,9 @@ header {
   margin-top: 4rem;
 }
 
+.platforms-img {
+  margin: 1.2rem;
+}
 
 /* ? Footer */
 footer .logo {
@@ -428,36 +439,31 @@ footer .cd-red-logo {
   font-size: 1.2rem;
 }
 
-/* * Tablet RWD */
 
+/* * Tablet RWD */
 @media (min-width: 1024px) {
-  .wrapper {
+ .wrapper {
     max-width: 1024px;
-    padding: 0;
+    padding: 0 ;
     margin: 0 auto;
   }
 
-  header .wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  header {
+    width: 100%;
   }
 
-  .nav-menu ul {
-  gap: 4rem;
-  
-}
+  header .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
 
 /* Hero section */
 .common-background {
   background: url("images/hero-sec-tablet-bg.png") no-repeat ;
-  
-
+  background-size: cover;
 }
-.hero {
-  min-height: 79.2dvh;
-}
-
 
  .hero .wrapper {
     display: flex;
@@ -472,15 +478,20 @@ footer .cd-red-logo {
 
 
 /* !Description section */
+
+
 .description h1 {
   font-size: 6.2rem;
   white-space: pre-line;
   margin-left: 3.6rem;
+  margin: 7rem 0 0 3.6rem;
 }
 
 .description p {
   font-size: 1.8rem;
-  line-height: 3.4rem;
+  line-height: 3.2rem;
+  margin: 0 0 7rem 3.6rem;
+  white-space: pre-line;
 }
 
 .description .picture-container {
@@ -499,20 +510,18 @@ footer .cd-red-logo {
   "main-form console-img";
   padding-left: 3.6rem;
   padding-right: 3.6rem;
- 
-  
- 
-  
 }
 
 .sale-img {
   grid-area: sale-img;
-  margin-top: 2rem;
+  margin: 2rem;
+  
 }
 
  .play .play-win {
   grid-area: play-win;
   font-size: 6.2rem;
+  margin-bottom: 2.5rem;
 
 }
 
@@ -531,23 +540,22 @@ footer .cd-red-logo {
 
 .main-form {
   grid-area: main-form;
+  
+}
+
+.play form {
+  margin-top: 9.8rem;
+  padding-bottom: 7rem;
 }
 
 /* !Deep Dive section */
 
 
-
-.deep-dive {
-  position: relative;
-}
-
 .deep-dive::before {
   display: block;
   background: url("images/dots-gradient-2-desk-tablet.png");
   background-color: none;
-
 }
-
 
 .deep-dive .wrapper{
   display: grid;
@@ -558,10 +566,8 @@ footer .cd-red-logo {
     "monitor-img full-deep-p"
     "monitor-img parameters"
     "monitor-img more-btn";
-    
-  gap: 2rem; 
+    column-gap: 3.2rem; 
 }
-
 
 .monitor-img {
   grid-area: monitor-img;
@@ -570,16 +576,21 @@ footer .cd-red-logo {
  .deep-dive .full-deep {
   grid-area: full-deep;
   font-size: 6.2rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
 }
 
  .deep-dive .full-deep-p {
   grid-area: full-deep-p;
   font-size: 1.8rem;
   line-height: 3.4rem;
+  white-space: pre-line;
+  font-weight: 400;
 }
 
 .deep-dive .parametrs {
   grid-area: parameters;
+  margin: 0;
 }
 
 .deep-dive .more-btn {
@@ -593,10 +604,13 @@ footer .cd-red-logo {
 
  .deep-dive .more-btn {
   width: 19.4rem;
+  margin-top: 4rem;
 }
 
 /* ! buy-game section  */
-
+.buy-game {
+  padding-bottom: 0;
+}
 .buy-game .wrapper {
   display: grid;
   grid-template-columns: 33.2rem 1fr;
@@ -623,6 +637,7 @@ footer .cd-red-logo {
 .buy-game .include-complect {
   grid-area: include-comlect;
   font-size: 2.4rem;
+  margin-left: 1.2rem;
 }
 
 .buy-game .choose-platform {
@@ -631,12 +646,16 @@ footer .cd-red-logo {
 
 .buy-game .platforms-img {
   grid-area: platforms-img;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
+  margin-left: 1.2rem;
+}
+
+.bonuses {
+  margin: 0;
 }
 
 
 /* Footer */
-
 .footer .wrapper {
   display: flex;
   justify-content: space-around;
@@ -656,16 +675,14 @@ footer picture {
 .licence {
   background: none;
   flex-direction: row;
-  gap: 1rem;
-  white-space: nowrap;
+  gap: 2rem;
+  white-space: wrap;
   font-size: 1.8rem;
 }
 
 .licence-2 {
   background-color: #000000;
   width: 102.4rem;
-  
 }
-
 
 }
