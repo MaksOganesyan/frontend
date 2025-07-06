@@ -655,34 +655,44 @@ footer .cd-red-logo {
 }
 
 
-/* Footer */
-.footer .wrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+
   
-}
 
-footer a.logo {
-  margin-top: 0;
-}
+    footer .wrapper {
+        display: flex;
+        flex-direction: row; /* Элементы в одну строку */
+        flex-wrap: wrap; /* Разрешаем перенос при необходимости */
+        justify-content: space-between; 
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
 
-footer picture {
-  margin: 0;
-}
+    footer a.logo {
+        margin-top: 0;
+        padding: 2rem; 
+        flex: 0 0 auto; 
+    }
 
-.licence {
-  background: none;
-  flex-direction: row;
-  gap: 2rem;
-  white-space: wrap;
-  font-size: 1.8rem;
-}
+    footer picture {
+        margin: 0;
+    }
 
-.licence-2 {
-  background-color: #000000;
-  width: 102.4rem;
-}
+    .licence {
+        background: none;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        font-size: 1.8rem;
+        white-space: wrap;
+    }
 
+    .licence-2 {
+        background-color: #000000;
+        width: 100%; 
+        font-size: 1.2rem;
+        color: white;
+        white-space: nowrap; 
+        margin: 0;
+    }
 }
