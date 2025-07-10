@@ -598,6 +598,11 @@ footer .cd-red-logo {
     
 }
 
+
+
+.main-form form {
+  width: 300px;
+}
 .monitor-img {
   grid-area: monitor-img;
 }
@@ -613,6 +618,7 @@ footer .cd-red-logo {
   grid-area: full-deep-p;
   font-size: 1.8rem;
   line-height: 3.4rem;
+  padding-left: 2rem;
   white-space: pre-line;
   font-weight: 400;
 }
@@ -639,14 +645,15 @@ footer .cd-red-logo {
     
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 10px;
+    gap: 1rem;
+    padding: 1rem;
    
 }
 
 .parametrs li {
     display: flex;
-    align-items: center; /* Выравнивание по вертикали */
+    align-items: center; 
+   
     
 }
 
@@ -657,7 +664,7 @@ footer .cd-red-logo {
 }
 
 .parametrs p {
-    margin: 0; 
+    margin: 0 0 0 1rem; 
     font-size: 1.6rem; 
     align-items: center;
 }
@@ -843,20 +850,22 @@ footer .cd-red-logo {
 .deep-dive .wrapper {
   grid-template-columns: 63rem 0.5fr;
   margin: 0 36rem;
-  
- 
 }
 
-
+.deep-dive p {
+  margin: 0;
+  white-space: nowrap;
+}
 .monitor-img {
   justify-self: start;
 }
 .full-deep {
   white-space: pre-line;
-
 }
 
-
+.play .wrapper {
+  margin: 0 32rem 0 32rem;
+}
 
 .buy-game .wrapper {
   grid-template-columns: 94.4rem 1fr;
