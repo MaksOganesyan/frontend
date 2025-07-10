@@ -297,10 +297,8 @@ picture {
   padding-top: 8rem;
   padding-bottom: 7rem;
   background: #F8F200;
-  
-  
-
 }
+
 
 .deep-dive::before {
   content: "";
@@ -316,11 +314,31 @@ picture {
   
 }
 
-.deep-dive picture {
-  display: flex;
-  align-items: center;
-  margin-top: 7.5rem;
-  margin-bottom: 1.5rem;
+
+.parametrs {
+    list-style: none;
+    padding: 0;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+   
+}
+
+.parametrs li {
+    display: flex;
+    align-items: center; 
+    
+}
+
+
+
+
+.parametrs p {
+    margin: 0; 
+    font-size: 1.6rem; 
+    align-items: center;
 }
 
 .monitor-img {
@@ -482,8 +500,6 @@ footer .cd-red-logo {
 
 
 /* !Description section */
-
-
 .description h1 {
   font-size: 6.2rem;
   white-space: pre-line;
@@ -502,6 +518,7 @@ footer .cd-red-logo {
   display: grid;
   grid-template-columns: repeat(2,46rem);
 }
+
 
 
 /* * Play section */
@@ -562,8 +579,6 @@ footer .cd-red-logo {
 }
 
 /* !Deep Dive section */
-
-
 .deep-dive::before {
   display: block;
   background: url("images/dots-gradient-2-desk-tablet.png");
@@ -572,7 +587,7 @@ footer .cd-red-logo {
 
 .deep-dive .wrapper{
   display: grid;
-  grid-template-columns: 46rem 1fr;
+  grid-template-columns: 45rem  1fr;
   grid-template-rows: auto auto auto auto;
   grid-template-areas: 
     "monitor-img full-deep"
@@ -580,6 +595,7 @@ footer .cd-red-logo {
     "monitor-img parameters"
     "monitor-img more-btn";
     column-gap: 3.2rem; 
+    
 }
 
 .monitor-img {
@@ -610,14 +626,54 @@ footer .cd-red-logo {
   grid-area: more-btn;
 }
 
+
+
 .parametrs picture p {
-  margin: 0 0 0 1.4rem;
   font-size: 1.8rem;
+  display: block;
+}
+
+.parametrs {
+    list-style: none;
+    padding: 0;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+   
+}
+
+.parametrs li {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    
+}
+
+.parametrs img {
+    width: 2.4rem; 
+    height: auto;
+    
+}
+
+.parametrs p {
+    margin: 0; 
+    font-size: 1.6rem; 
+    align-items: center;
 }
 
  .deep-dive .more-btn {
   width: 19.4rem;
   margin-top: 4rem;
+}
+
+.deep-dive picture {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.monitor-img {
+  margin-top: 10rem;
 }
 
 /* ! buy-game section  */
@@ -785,11 +841,22 @@ footer .cd-red-logo {
 
   /* Deep  */
 .deep-dive .wrapper {
-  grid-template-columns: 63rem 1fr;
+  grid-template-columns: 63rem 0.5fr;
+  margin: 0 36rem;
+  
+ 
+}
+
+
+.monitor-img {
+  justify-self: start;
 }
 .full-deep {
   white-space: pre-line;
+
 }
+
+
 
 .buy-game .wrapper {
   grid-template-columns: 94.4rem 1fr;
